@@ -4,6 +4,8 @@ pycodestyle==2.8.0
 pyflakes==2.4.0
 
 # Deps do pytest
+coverage==6.2
+pytest-cov==3.0.0
 atomicwrites==1.0
 py==1.8.2
 pluggy<2.0,>=0.12
