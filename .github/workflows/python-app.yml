@@ -37,9 +37,5 @@ jobs:
     - name: Test with pytest
       run: |
           pytest libpythonpro --cov=libpythonpro
-    - name: Codecov Report
-      env:
-        CODECOV_TOKEN: ' 85bf6a93-5630-481a-8c43-26be9c78426f'
-      run: |
-        codecov
->>>>>>>>> Temporary merge branch 2
+    - uses: actions/checkout@master
+    - uses: codecov/codecov-action@v3
