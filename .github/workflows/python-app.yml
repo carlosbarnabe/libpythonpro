@@ -27,7 +27,7 @@ jobs:
       run: |
         python -m pip install --upgrade pip
         pip install flake8 pytest
-        pip install -r requirements-dev.txt
+        if ([ -f requirements.txt ]; then pip install -r requirements.txt; fi
     - name: Lint with flake8
       run: |
         # stop the build if there are Python syntax errors or undefined names
@@ -42,3 +42,4 @@ jobs:
         CODECOV_TOKEN: ' 85bf6a93-5630-481a-8c43-26be9c78426f'
       run: |
         codecov
+>>>>>>>>> Temporary merge branch 2
