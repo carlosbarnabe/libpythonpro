@@ -35,11 +35,5 @@ jobs:
         # exit-zero treats all errors as warnings. The GitHub editor is 127 chars wide
         flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
     - name: Test with pytest
-      run: |
-        pytest --cov=libpythonpro
-    - name: Relatório Codecov
-      env:
-        CODECOV_TOKEN: '85bf6a93-5630-481a-8c43-26be9c78426f'
-      run: |
-        codecov
-        
+      run:  |
+          pytest libpythonpro --cov=libpythonpro
