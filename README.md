@@ -16,3 +16,5 @@ Para verificar qualidade do código
 ''' console 
 flake8
 '''
+
+[![codecov](https://codecov.io/gh/carlosbarnabe/libpythonpro/branch/main/graph/badge.svg?token=66P4N1POUS)](https://codecov.io/gh/carlosbarnabe/libpythonpro)
